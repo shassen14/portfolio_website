@@ -14,16 +14,10 @@ const About = () => {
           That curiosity led me to specialize in Guidance, Navigation, and Control (GNC), 
           developing software for vehicles across land, air, and sea. I&apos;ve spent the 
           last six years learning how to make robots move reliably in difficult environments. 
-          Recently, I&apos;ve been expanding my skillset upstream—building the distributed 
+          Recently, I&apos;ve been expanding my skillset upstream by building the distributed 
           infrastructure and simulation tools necessary to validate autonomous behaviors 
           before they ever touch the real world.
         </p>
-        {/* <p className="">
-          I&apos;ve been blessed to work with amazing people who I learned a lot
-          from throughout my career. I want to share this knowledge in form of
-          videos during my free time. Feel free to watch (hopefully) educational
-          and entertaining videos here.
-        </p> */}
       </div>
     </section>
   );
