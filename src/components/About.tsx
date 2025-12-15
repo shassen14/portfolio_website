@@ -6,18 +6,17 @@ const About = () => {
       </div>
       <div className="flex flex-col gap-5 text-base text-muted-foreground">
         <p className="">
-          From my educational background, I designed, manufactured, and analyzed
-          mechanical systems. During my journey, I stumbled across the field of
-          robotics. At first, I thought it was cool to build the physical
-          hardware (I still do), but what really peaked my interest was the
-          software behind the autonomous behaviors.
+          My journey into robotics started with a background in Mechanical Engineering, 
+          where I designed and analyzed physical systems. While I loved the hardware, 
+          I became fascinated by the software that brings that hardware to life.
         </p>
         <p className="">
-          This interest has led me to develop autonomy software for robots that
-          have traversed through land, air, and sea. Most of my contributions
-          and expertise is in GNC (Guidance, Navigation, and Control). Lately,
-          my focus has been more upstream where I get to be more involved with
-          perception and mapping, and I hope to stay in this realm.
+          That curiosity led me to specialize in Guidance, Navigation, and Control (GNC), 
+          developing software for vehicles across land, air, and sea. I&apos;ve spent the 
+          last six years learning how to make robots move reliably in difficult environments. 
+          Recently, I&apos;ve been expanding my skillset upstream—building the distributed 
+          infrastructure and simulation tools necessary to validate autonomous behaviors 
+          before they ever touch the real world.
         </p>
         {/* <p className="">
           I&apos;ve been blessed to work with amazing people who I learned a lot

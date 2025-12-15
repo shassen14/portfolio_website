@@ -1,5 +1,5 @@
 // import { Github, Linkedin, Youtube } from "lucide-react";
-import { FiGithub, FiLinkedin, FiYoutube } from "react-icons/fi";
+import { FiGithub, FiLinkedin } from "react-icons/fi";
 import { Button } from "@/components/ui/button";
 import ThemeSwitcher from "@/components/utils/ThemeSwitcher";
 
@@ -25,7 +25,7 @@ const Contacts = () => {
           <FiGithub className="h-6 w-fit" />
         </a>
       </Button>
-      <Button variant="outline" className="">
+      {/* <Button variant="outline" className="">
         <a
           href="https://www.youtube.com/"
           target="_blank"
@@ -33,7 +33,7 @@ const Contacts = () => {
         >
           <FiYoutube className="h-6 w-fit" />
         </a>
-      </Button>
+      </Button> */}
       <ThemeSwitcher></ThemeSwitcher>
     </div>
   );
