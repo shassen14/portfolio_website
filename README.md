@@ -1,148 +1,139 @@
 <div align="center">
-  <img  src="public/images/logo.png" alt="Logo" width="150" />
+  <img src="public/images/logo.png" alt="Logo" width="150" />
 </div>
 <h1 align="center">
   <a href="https://samirhassen.com" target="_blank">samirhassen.com</a>
 </h1>
 <p>
-Portfolio website which was inspired by <a href="https://brittanychiang.com" target="_blank">Brittany Chiang's</a> design. This was built using Next.js, Tailwind CSS, shadcn/ui, and desire to recreate a nicely design portfolio website.
+Portfolio website inspired by <a href="https://brittanychiang.com" target="_blank">Brittany Chiang's</a> design. Built with Next.js, Tailwind CSS, and shadcn/ui. Almost everything is configurable through a single JSON file — no component editing required for most changes.
 </p>
 
 <div align="center">
   <img alt="Website Visual" src="https://raw.githubusercontent.com/shassen14/portfolio_website/refs/heads/main/public/images/website_screenshot.png" />
 </div>
 
-## 🚨 Forking this repo (please read!)
+## Forking this repo
 
-* Feel free to use this code for your own website. Give Brittany proper credit by linking back to [brittanychiang.com](https://brittanychiang.com).
-* Feel free to give me credit as well for programming this by linking back to [samirhassen.com](https://samirhassen.com). I like sharing code with others. Just don't claim that you programmed everything yourself.
+Feel free to use this for your own portfolio. If you do:
+- Give [Brittany Chiang](https://brittanychiang.com) credit for the original design.
+- A link back to [samirhassen.com](https://samirhassen.com) is appreciated but not required.
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to see the result.
 
-### Edit website for your needs
+## Configuration
 
-#### [global.css](src/app/globals.css)
+Almost all content lives in one file: [`public/configs/page_details.json`](public/configs/page_details.json).
 
-To change the color theme and keep the same style, one needs to change the colors in this file in hsl format. For specific style color changes, one may needs to go into the code to change the text, background, etc. colors.
+### `about`
 
-#### [page_details.json](public/configs/page_details.json)
+Array of paragraph strings rendered in the About section.
 
-To change majority of the website's content, edit this file. 
-
-**header**
-
-5 second introduction snippet.
-
-```
-  "header": {
-    "image": "images/profile.jpg", // insert profile picture path string here
-    "introduction": "Howdy, Samir here", // insert intro string here
-    "position": "Software Engineer", // insert position or what you want to be known as string here
-    "summary": "I like to build autonomous systems" // insert short description of yourself string here
-  },
+```json
+"about": [
+  "First paragraph of your bio.",
+  "Second paragraph."
+]
 ```
 
-**menu**
+### `header`
 
-One can change the section order which will change the order of which section shows up on the right hand side. This will also reflect on the menu on the left hand side.
+Shown in the left sidebar.
 
-```
-  "menu": [
-    {"isActive": false, "section": "about"}, // about section
-    {"isActive": false, "section": "education"}, // education section, I didn't include this in mine.
-    {"isActive": false, "section": "experience"}, // experience section
-    {"isActive": false, "section": "projects"} // projects section
-  ],
-```
-
-**education**
-
-```
-  "education": [  {
-    "subject": "Mechanical Engineering", // Degree subject
-    "degree": "MS", // Degree level
-    "university": "Texas A&M University" // School or University
-  }, 
-  ... {more education elements}]
+```json
+"header": {
+  "image": "images/profile.jpg",
+  "introduction": "Hi, I'm ...",
+  "position": "Software Engineer",
+  "summary": "Short tagline about yourself"
+}
 ```
 
-**experience**
+### `menu`
 
-```
- "experience":  [ { 
-    "position": "Position",
-    "prevPositions": ["Previous", "Positions", "Held at the same company"],
-    "company": "Company",
-    "startDate": "Oct 1999",
-    "endDate": "Oct 2003",
-    "description": "Put your accomplishments and what you did here.",
-    "skills": ["List", "technical", "or", "soft", "skills", "here", "one", "by", "one"],
-    "mainLink": "link_here.com",
-    "sideLinks": [{"label":"text showed to the viewer", "link":"extra_link_here.com"}]
-  },  
-  ... {more experience elements}]
+Controls which sections appear and in what order. Set `isActive` to `false` to hide a section entirely.
+
+```json
+"menu": [
+  { "isActive": true, "section": "about" },
+  { "isActive": true, "section": "education" },
+  { "isActive": true, "section": "experience" },
+  { "isActive": true, "section": "projects" }
+]
 ```
 
-**projects**
+### `education`
 
-```
-  "projects":  [ { 
-    "name": "Project Title",
-    "image":"picture from https://raw.githubusercontent.com or relative path within this project",
-    "description": "Describe project here",
-    "skills": ["List", "technical", "or", "soft", "skills", "here", "one", "by", "one"],
-     "mainLink": "link_here.com",
-    "sideLinks": [{"label":"text showed to the viewer", "link":"extra_link_here.com"}]
-  },
-  ... {more project elements}]
+```json
+"education": [
+  {
+    "subject": "Computer Science",
+    "degree": "BS",
+    "university": "University Name"
+  }
+]
 ```
 
-#### [Contacts.tsx](src/components/Contacts.tsx)
+### `experience`
 
-Edit this file for desired social media or contact information. I would like to add this into the json.
+```json
+"experience": [
+  {
+    "position": "Software Engineer",
+    "prevPositions": ["Junior Engineer"],
+    "company": "Company Name",
+    "startDate": "Jan 2022",
+    "endDate": "Present",
+    "description": "What you did and accomplished.",
+    "skills": ["Python", "Go", "Kubernetes"],
+    "mainLink": "https://company.com",
+    "sideLinks": [
+      { "label": "Blog post", "link": "https://..." }
+    ]
+  }
+]
+```
 
-* Possible TODO: create an enum with several different social media website string (i.e. twitter, linkedin, etc.). Create a type that includes the string for type of social media and the link. Contacts.tsx will accept an array of this new type which would create a button for each social media in switch statement. If one wants to add more, then add onto the enum and switch statement. Also add the logo from react-icons.
+`prevPositions` and `sideLinks` are optional.
 
-#### [About.tsx](src/components/About.tsx)
+### `projects`
 
-Edit this file to edit a more detailed summary of yourself. This one will not be included in the json since it would be easier to include links and manually edit that way.
+```json
+"projects": [
+  {
+    "name": "Project Name",
+    "image": "images/screenshot.png",
+    "description": "What it does and why it's interesting.",
+    "skills": ["Rust", "React"],
+    "mainLink": "https://github.com/...",
+    "sideLinks": [
+      { "label": "Demo", "link": "https://..." }
+    ]
+  }
+]
+```
+
+`image` accepts a relative path (files in `public/`) or a raw GitHub URL. `sideLinks` is optional.
+
+## Theming
+
+Colors are defined as CSS custom properties in [`src/app/globals.css`](src/app/globals.css) in HSL format. Edit the `:root` block for light mode and the `.dark` block for dark mode. The site ships with a warm cream/brown light theme and a dark red-brown dark theme.
+
+## What still needs a code edit
+
+These items aren't in the JSON yet and require editing a component directly:
+
+- **Social links** — [`src/components/Contacts.tsx`](src/components/Contacts.tsx)
+- **Page metadata** (title, description) — [`src/app/layout.tsx`](src/app/layout.tsx)
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-
-# To-Do List
-
-This section is just for me to keep track of items I want to finish.
-
-- [x] add section titles for each section only for mobile or not "large" monitors
-- [x] for large monitors, have the menu items highlighted when scrolling to that section
-- [x] finalize color themes for dark
-- [x] finalize color themes for light
-- [x] experience description and skills (initial draft)
-- [x] project description and skills
-- [x] remove education section?
-- [x] mouse spotlight effect
-- [x] new readme
-- [ ] putting sun or moon inside switch button?
-- [ ] update contacts. possibly put them in the json as configurable? might be difficult with symbols.
-- [x] ability to add extra links within experience or project cards
-- [ ] be more consistent with margin/padding top and right or bottom and left to help with item spacing
-- [x] have links change color in footer and in about sections
-- [x] get a domain name for website
+See the [Next.js deployment docs](https://nextjs.org/docs/app/building-your-application/deploying) for details.

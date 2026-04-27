@@ -1,4 +1,9 @@
 {
+  "about": [
+    "I started in mechanical engineering, building an intuition for physical systems before going deep on the software that controls them. Knowing why a robot fails in the real world and how to fix it in code is what I've built my career around.",
+    "For six years I've specialized in Guidance, Navigation, and Control, shipping mission-critical autonomy software for vehicles across land, air, and sea domains. The work involves sensor fusion, state estimation, and control algorithms that have to stay reliable when GPS drops out, environments are unstructured, and the stakes are physical.",
+    "Lately I've been expanding upstream, building the distributed simulation and infrastructure tooling that lets teams validate autonomous behavior before hardware ever enters the picture. The harder problems in robotics are often the engineering ones, not the algorithmic ones."
+  ],
   "header": {
     "image": "images/profile.jpg",
     "introduction": "Howdy, Samir here",
