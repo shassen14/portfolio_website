@@ -7,7 +7,7 @@
   "header": {
     "image": "images/profile.jpg",
     "introduction": "Howdy, Samir here",
-    "position": "Software Engineer",
+    "position": "Robotics Software Engineer",
     "summary": "I like to build autonomous systems"
   },
 
@@ -120,17 +120,9 @@
       "mainLink": "https://github.com/shassen14/gpt_the_office"
     },
     {
-      "name": "Rust Robotics",
-      "image": "https://raw.githubusercontent.com/shassen14/rust_robotics_media/refs/heads/main/models/n_joint_robotic_arm_2d.gif",
-      "description": "Currently, this includes some basic downstream algorithms (system modeling, path tracking, and controls). The goal is to create algorithms for majority of the autonomy pipeline from sensor data processing to controls.",
-      "skills": ["Rust"],
-      "mainLink": "https://github.com/shassen14/rust_robotics",
-      "sideLinks": []
-    },
-    {
       "name": "samirhassen.com",
       "image": "images/website_screenshot.png",
-      "description": "I'm not a frontend developer by any means, but I created this portfolio website using Brittany Chiang's website as inspiration. I learned and executed ideas in an unfamiliar domain.",
+      "description": "Portfolio built with Next.js, TypeScript, and Tailwind CSS. Architected around a single JSON config file so all content — bio, experience, projects — can be updated without touching component code.",
       "skills": ["Next.js", "React", "TypeScript", "Tailwind CSS"],
       "mainLink": "https://github.com/shassen14/portfolio_website"
     }
