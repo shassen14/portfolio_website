@@ -86,7 +86,7 @@
       "company": "SAE AutoDrive Challenge",
       "startDate": "Aug 2017",
       "endDate": "May 2018",
-      "description": "I designed, developed, and applied controls for a commercial vehicle. The team ultimately won 2nd place overall.",
+      "description": "Led controls development for Texas A&M's SAE AutoDrive entry, placing 2nd overall in the inaugural competition. Designed and implemented the full controls stack for a commercial autonomous vehicle, covering lateral and longitudinal control for urban driving scenarios.",
       "skills": ["C++", "Python", "MATLAB", "ROS"],
       "mainLink": "https://www.autodrivechallenge.com/",
       "sideLinks": [
