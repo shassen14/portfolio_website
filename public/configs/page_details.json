@@ -7,76 +7,127 @@
   },
 
   "menu": [
-    {"isActive": false, "section": "about"},
-    {"isActive": false, "section": "experience"},
-    {"isActive": false, "section": "projects"}
+    { "isActive": false, "section": "about" },
+    { "isActive": false, "section": "experience" },
+    { "isActive": false, "section": "projects" }
   ],
-  "education": [  {
-    "subject": "Mechanical Engineering",
-    "degree": "MS",
-    "university": "Texas A&M University"
-  },
-  {
-    "subject": "Mechanical Engineering",
-    "degree": "BS",
-    "university": "Texas A&M University"
-}],
-  "experience":  [ { 
-    "position": "Robotics Engineer",
-    "prevPositions": [""],
-    "company": "Greensea IQ",
-    "startDate": "Oct 2021",
-    "endDate": "Feb 2024",
-    "description": "Core developer for the OPENSEA autonomy platform, deploying mission-critical GNC software to commercial underwater fleets. Specifically, I engineered solutions for SLAM-based navigation, sensor fusion, and obstacle avoidance on the 'EverClean' hull-cleaning robots, 'Bayonet' amphibious crawlers.",
-    "skills": ["C++", "Python", "SLAM", "GNC", "Kalman Filter", "CMake", "Docker", "Sensor Fusion"],
-    "mainLink": "https://greenseaiq.com/",
-    "sideLinks": [{"label":"Watch EOD Demo", "link":"https://www.youtube.com/watch?v=XmifeADVPSM&ab_channel=GreenseaIQ"}]
-  }, { 
-    "position": "Research Engineer",
-    "company": "Bush Combat Development Complex",
-    "startDate": "May 2020",
-    "endDate": "Sep 2021",
-    "description": "R&D focus on multi-agent coordination between autonomous air and ground vehicles in unstructured, off-road environments. I engineered real-time perception pipelines (LiDAR to 2D Costmap) and developed local planners for obstacle avoidance.",
-    "skills": ["C++", "Python", "ROS", "Perception", "Point Clouds", "OpenCV", "Linux", "DevOps"],
-    "mainLink": "https://bcdc.tamus.edu/core-competencies/coordinated-air-ground-vehicle-maneuvering/"
-  },
-  { 
-    "position": "Graduate Researcher",
-    "company": "Connected Autonomous Safe Technologies",
-    "startDate": "Aug 2018",
-    "endDate": "May 2020",
-    "description": "Designed and validated data-driven, nonlinear control architectures for a drive-by-wire UTV. I developed system identification models to characterize vehicle dynamics and implemented Sliding Mode Controllers for precise off-road path tracking.",
-    "skills": ["Python", "ROS", "Control Theory", "System Identification"],
-    "mainLink": "https://cast.tamu.edu/"
-  },  { 
-    "position": "Controls Team Lead",
-    "company": "SAE AutoDrive Challenge",
-    "startDate": "Aug 2017",
-    "endDate": "May 2018",
-    "description": "I designed, developed, and applied controls for a commercial vehicle. The team ultimately won 2nd place overall.",
-    "skills": ["C++", "Python", "MATLAB", "ROS"],
-    "mainLink": "https://www.autodrivechallenge.com/",
-    "sideLinks": [{"label":"2nd Place Article", "link":"https://tees.tamu.edu/news/2018/05/texas-am-engineering-autodrive-challenge-team-takes-second-overall-in-first-competition-milestone.html"}]
-
-  }],
-  "projects":  [ {
-    "name": "GPT - The Office",
-    "image": "https://raw.githubusercontent.com/shassen14/gpt_the_office/refs/heads/main/docs/main/generation.gif",
-    "description": "A Generative Pretrained Model (GPT) using a decoder architecture similar to \"Attention is All You Need,\" trained on scripts from \"The Office\" to generate dialogue in the show's style. Implements custom character-wise and GPT-2 tokenization methods. Originally trained on a single GPU, with future plans to scale to multi-GPU distributed training.",
-    "skills": ["Python", "Pytorch", "Numpy", "LLM"],
-    "mainLink": "https://github.com/shassen14/gpt_the_office"
-  }, { 
-    "name": "Rust Robotics",
-    "image":"https://raw.githubusercontent.com/shassen14/rust_robotics_media/refs/heads/main/models/n_joint_robotic_arm_2d.gif",
-    "description": "Currently, this includes some basic downstream algorithms (system modeling, path tracking, and controls). The goal is to create algorithms for majority of the autonomy pipeline from sensor data processing to controls.",
-    "skills": ["Rust"],
-    "mainLink": "https://github.com/shassen14/rust_robotics",
-    "sideLinks": []
-  }, { 
-    "name": "samirhassen.com",
-    "image":"images/website_screenshot.png",
-    "description": "I'm not a frontend developer by any means, but I created this portfolio website using Brittany Chiang's website as inspiration. I learned and executed ideas in an unfamiliar domain.",
-    "skills": ["Next.js", "React", "TypeScript", "Tailwind CSS"],
-    "mainLink": "https://github.com/shassen14/portfolio_website"
-  }]
+  "education": [
+    {
+      "subject": "Mechanical Engineering",
+      "degree": "MS",
+      "university": "Texas A&M University"
+    },
+    {
+      "subject": "Mechanical Engineering",
+      "degree": "BS",
+      "university": "Texas A&M University"
+    }
+  ],
+  "experience": [
+    {
+      "position": "Robotics Engineer",
+      "prevPositions": [""],
+      "company": "Greensea IQ",
+      "startDate": "Oct 2021",
+      "endDate": "Feb 2024",
+      "description": "Core developer for the OPENSEA autonomy platform, deploying mission-critical GNC software to commercial underwater fleets. Specifically, I engineered solutions for SLAM-based navigation, sensor fusion, and obstacle avoidance on the 'EverClean' hull-cleaning robots, 'Bayonet' amphibious crawlers.",
+      "skills": [
+        "C++",
+        "Python",
+        "SLAM",
+        "GNC",
+        "Kalman Filter",
+        "CMake",
+        "Docker",
+        "Sensor Fusion"
+      ],
+      "mainLink": "https://greenseaiq.com/",
+      "sideLinks": [
+        {
+          "label": "Watch EOD Demo",
+          "link": "https://www.youtube.com/watch?v=XmifeADVPSM&ab_channel=GreenseaIQ"
+        }
+      ]
+    },
+    {
+      "position": "Research Engineer",
+      "company": "Bush Combat Development Complex",
+      "startDate": "May 2020",
+      "endDate": "Sep 2021",
+      "description": "R&D focus on multi-agent coordination between autonomous air and ground vehicles in unstructured, off-road environments. I engineered real-time perception pipelines (LiDAR to 2D Costmap) and developed local planners for obstacle avoidance.",
+      "skills": [
+        "C++",
+        "Python",
+        "ROS",
+        "Perception",
+        "Point Clouds",
+        "OpenCV",
+        "Linux",
+        "DevOps"
+      ],
+      "mainLink": "https://bcdc.tamus.edu/core-competencies/coordinated-air-ground-vehicle-maneuvering/"
+    },
+    {
+      "position": "Graduate Researcher",
+      "company": "Connected Autonomous Safe Technologies",
+      "startDate": "Aug 2018",
+      "endDate": "May 2020",
+      "description": "Designed and validated data-driven, nonlinear control architectures for a drive-by-wire UTV. I developed system identification models to characterize vehicle dynamics and implemented Sliding Mode Controllers for precise off-road path tracking.",
+      "skills": ["Python", "ROS", "Control Theory", "System Identification"],
+      "mainLink": "https://cast.tamu.edu/"
+    },
+    {
+      "position": "Controls Team Lead",
+      "company": "SAE AutoDrive Challenge",
+      "startDate": "Aug 2017",
+      "endDate": "May 2018",
+      "description": "I designed, developed, and applied controls for a commercial vehicle. The team ultimately won 2nd place overall.",
+      "skills": ["C++", "Python", "MATLAB", "ROS"],
+      "mainLink": "https://www.autodrivechallenge.com/",
+      "sideLinks": [
+        {
+          "label": "2nd Place Article",
+          "link": "https://tees.tamu.edu/news/2018/05/texas-am-engineering-autodrive-challenge-team-takes-second-overall-in-first-competition-milestone.html"
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Helios Simulation Engine",
+      "image": "https://raw.githubusercontent.com/shassen14/rust_robotics_media/refs/heads/main/models/n_joint_robotic_arm_2d.gif",
+      "description": "A high-fidelity robotics simulator architected in Rust using the Bevy game engine (ECS). I implemented rigid body dynamics and sensor models (IMU, LiDAR) from first principles to benchmark GNC algorithms in a deterministic synthetic environment. The system features a hot-swappable plugin architecture that bridges the gap between theoretical MATLAB control design and real-time Rust implementation.",
+      "skills": [
+        "Rust",
+        "Bevy",
+        "Robotics",
+        "Physics Engine",
+        "ECS",
+        "Synthetic Data"
+      ],
+      "mainLink": "https://github.com/shassen14/helios"
+    },
+    {
+      "name": "GPT - The Office",
+      "image": "https://raw.githubusercontent.com/shassen14/gpt_the_office/refs/heads/main/docs/main/generation.gif",
+      "description": "A Generative Pretrained Model (GPT) using a decoder architecture similar to \"Attention is All You Need,\" trained on scripts from \"The Office\" to generate dialogue in the show's style. Implements custom character-wise and GPT-2 tokenization methods. Originally trained on a single GPU, with future plans to scale to multi-GPU distributed training.",
+      "skills": ["Python", "Pytorch", "Numpy", "LLM"],
+      "mainLink": "https://github.com/shassen14/gpt_the_office"
+    },
+    {
+      "name": "Rust Robotics",
+      "image": "https://raw.githubusercontent.com/shassen14/rust_robotics_media/refs/heads/main/models/n_joint_robotic_arm_2d.gif",
+      "description": "Currently, this includes some basic downstream algorithms (system modeling, path tracking, and controls). The goal is to create algorithms for majority of the autonomy pipeline from sensor data processing to controls.",
+      "skills": ["Rust"],
+      "mainLink": "https://github.com/shassen14/rust_robotics",
+      "sideLinks": []
+    },
+    {
+      "name": "samirhassen.com",
+      "image": "images/website_screenshot.png",
+      "description": "I'm not a frontend developer by any means, but I created this portfolio website using Brittany Chiang's website as inspiration. I learned and executed ideas in an unfamiliar domain.",
+      "skills": ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+      "mainLink": "https://github.com/shassen14/portfolio_website"
+    }
+  ]
 }
